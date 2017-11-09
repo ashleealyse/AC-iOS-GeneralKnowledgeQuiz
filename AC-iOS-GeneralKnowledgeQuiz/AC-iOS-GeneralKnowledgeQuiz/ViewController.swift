@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let destination = segue.destination as? DetailedViewController {
             let selectedRow = tableView.indexPathForSelectedRow?.row
             let selectedQuestion = questions[selectedRow!]
-            destination. = selctedQuestion 
+            destination.thisQuestion = selectedQuestion
         }
     }
 }
